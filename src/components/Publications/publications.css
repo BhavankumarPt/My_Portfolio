@@ -1,0 +1,112 @@
+.publications-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+  .publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .publication-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .publication-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    line-height: 1.4;
+  }
+  
+  .publication-journal {
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .publication-doi {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .publication-doi a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .publication-doi a:hover {
+    text-decoration: underline;
+  }
+  
+  .publication-publisher, .publication-status {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .research-profiles {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .research-profiles h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .profile-link {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-link:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .publications-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .publications-section {
+      padding: 60px 20px;
+    }
+  }

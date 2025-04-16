@@ -1,0 +1,207 @@
+.experience-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+  
+  .timeline-category {
+    margin-bottom: 20px;
+  }
+  
+  .category-title {
+    font-size: 1.6rem;
+    color: #3498db;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .category-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #e0e0e0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    left: -34px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #3498db;
+  }
+  
+  .timeline-content {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-header h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .timeline-period {
+    background-color: #3498db;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .timeline-company {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  .company-name {
+    font-weight: 500;
+  }
+  
+  .timeline-description {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .timeline-description li {
+    margin-bottom: 8px;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  .achievements-section {
+    background-color: #f0f9ff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .achievements-title {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .achievements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  
+  .achievements-list li {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .achievements-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .timeline-period {
+      margin-top: 8px;
+    }
+    
+    .timeline-company {
+      flex-direction: column;
+    }
+    
+    .location {
+      margin-top: 5px;
+    }
+    
+    .achievements-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .experience-section {
+      padding: 60px 20px;
+    }
+  }
